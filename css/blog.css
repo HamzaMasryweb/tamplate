@@ -1,0 +1,101 @@
+/* .blog */
+
+.blog {background-color: rgb(209 207 207 / 55%);}
+.blog-content{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;}
+.blog-content-item{width: 320px;margin: 15px;background-color: rgb(248, 243, 243);}
+.blog-content-item-img , 
+.blog-content-item-img img{width: 100%;height: 190px;}
+.blog-content-item-title{padding: 20px;}
+.blog-content-item-title ul{list-style: none;}
+.blog-content-item-title ul li{display:inline-block ;padding-right: 15px;font-size: 18px;text-transform: capitalize;}
+.blog-content-item-title ul li i{font-size: 17px; color: blue;}
+.blog-content-item-title h2{padding: 15px 0;font-size: 20px;}
+.blog-content-item-title p{text-transform: capitalize;padding-bottom: 15px;color: rgb(133, 133, 133);}
+.blog-content-item-title a{color: rgb(54, 54, 224);text-decoration: none;}
+
+
+/* touch */
+
+.touch-content-app{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;}
+.touch-content-item{padding: 0 20px ;text-align: center;margin-bottom: 20px;}
+.touch-content-item i{font-size: 30px;color: rgb(26, 26, 219);}
+.touch-content-item h3{padding: 15px;}
+.touch-content-item p{color: rgb(105, 106, 107);}
+.input-content{padding-top: 30px;text-align: center;}
+.input-content input{
+    width: 300px;
+    padding: 7px ;
+    margin-bottom: 15px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.input-content input:focus , 
+input[placeholder="Subject"]:focus ,
+textarea:focus{box-shadow: 1px 5px 10px blue;}
+.form-content{text-align: center;}
+input[placeholder="Subject"]{
+    width: 600px;
+    margin-bottom: 15px ;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+textarea{
+    width: 600px;
+    padding: 10px 5px 15px 6px ;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.form-content button{
+    width: 130px;
+    margin: 20px 0;
+    padding: 9px 0;
+    background-color: rgb(68, 68, 230);
+    border: 0;
+    outline: 0;
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+} 
+
+@media screen and (max-width:800px){
+    input[placeholder="Subject"]{width: 100%;}
+    textarea{width: 100%;}
+}
+
+@media screen and (max-width:600px){
+    .touch-content-app {width: 100%;justify-content: space-around;
+    }
+    .touch-content-item i{font-size: 25px;}
+    
+    .touch-content-item h3{font-size: 15px;}
+    .touch-content-item p{font-size: 9px;}
+    input[placeholder="Subject"]{ width: 100%;font-size: 15px;}
+    textarea{ width: 100%;font-size: 15px;}
+}
+
+
+@media screen and (max-width:400px){
+    .blog-content-item{width: 300px;margin: 8px;}
+    .blog-content-item-title{padding: 10px;}
+    .blog-content-item-title ul li{padding-right: 5px;font-size: 7px;}
+    .blog-content-item-title ul li i{font-size: 15px;padding-right: 5px;}
+    .blog-content-item-title h2{padding: 12px 0;font-size: 15px;}
+    .blog-content-item-title p{font-size: 13px;padding-bottom: 10px;}
+    .touch-content-app {width: 100%;justify-content: space-around;}
+    .touch-content-item {padding: 0;text-align: center;margin-bottom: 15px;}
+    .touch-content-item i{font-size: 15px;}
+    .touch-content-item h3{font-size: 13px;padding: 10px;}
+    .touch-content-item p{font-size: 7px;font-weight: bold;}
+    .input-content input {width: 100%;margin-bottom: 12px;}
+    input[placeholder="Subject"]{width: 100%;font-size: 15px;}
+    textarea{width: 100%;font-size: 15px;}
+}

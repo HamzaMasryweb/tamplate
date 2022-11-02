@@ -1,0 +1,87 @@
+/* image */
+
+.section-image{background-color: rgb(209 207 207 / 55%); }
+.image-app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-app-img{
+    width: 350px;
+    height: 210px;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    transition: outline 0.2s;
+    -webkit-transition: outline 0.2s;
+    -moz-transition: outline 0.2s;
+    -ms-transition: outline 0.2s;
+    -o-transition: outline 0.2s;
+}
+.image-app-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.image-app-img:hover .image-app-title{opacity: 1;overflow: visible;}
+
+.image-app-img::after{content: "";position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.671);}
+.image-app-img img{width: 100%;height: 100%;}
+.image-app-img:hover{outline: 10px solid rgb(35, 36, 33);}
+.image-app-img:hover::after{display: none;}
+
+.image-app-title h4{
+    color: rgb(0, 0, 255);
+    margin-bottom: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    transition: top 0.5s ;
+    -webkit-transition: top 0.5s ;
+    -moz-transition: top 0.5s ;
+    -ms-transition: top 0.5s ;
+    -o-transition: top 0.5s ;
+}
+.image-app-title p{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 30px;
+    transition: top 0.7s ;
+    -webkit-transition: top 0.7s ;
+    -moz-transition: top 0.7s ;
+    -ms-transition: top 0.7s ;
+    -o-transition: top 0.7s ;
+}
+.image-app-title .icon i{
+    background-color: rgb(71, 124, 223);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    transition: top 0.9s ;
+    -webkit-transition: top 0.9s ;
+    -moz-transition: top 0.9s ;
+    -ms-transition: top 0.9s ;
+    -o-transition: top 0.9s ;
+    
+}
+.image-app-title .icon i:hover{background-color: blue;}
+.image-app-img:hover .image-app-title h4 , 
+.image-app-img:hover .image-app-title p ,
+.image-app-img:hover .image-app-title .icon i {top: 0;}
